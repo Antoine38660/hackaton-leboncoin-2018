@@ -26,7 +26,7 @@ SPEC REPOS:
   "git@gitlab.com:KZSLAB/Specs.git":
     - KZSLAB-AR-Indicator
     - KZSLAB-AR-View
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - FanMenu
     - Macaw
@@ -48,4 +48,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1e929bb7a1852d4e1f100911819444e3838b0556
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
