@@ -24,12 +24,6 @@ class MainViewController: KZSARViewController {
         }
     }
     
-    @IBOutlet internal weak var validButton: UIButton! {
-        didSet {
-            validButton.isHidden = true
-        }
-    }
-    
     // MARK: - Variables
     /// The view controller that displays the status and "restart experience" UI.
     lazy var statusViewController: StatusViewController = {
@@ -55,16 +49,11 @@ class MainViewController: KZSARViewController {
     /// Current selected object position.
     internal var currentVirtalObjectPos: SCNVector3?
     
-    /// Temporary array of `ARImageAnchor` allowing to save
-    /// images detected (for multi-detection)
-    internal var tmpImageAnchorDetected: [ARImageAnchor] = []
-    internal var debugingNodes: [SCNNode]?
-    internal var debugingProjectionView: UIView?
-    
-    
     /// Modal status.
     /// true if the modal is presented, otherwise false.
     internal var modalIsOpened = false
+    
+    public var productSelected: Product?
     
     // MARK: - Setup
     override func viewDidLoad() {
@@ -102,7 +91,6 @@ class MainViewController: KZSARViewController {
     
     func setupView() {
         // Init settings
-        validButton.isHidden = true
         
         // Fan View
         fanMenuView.backgroundColor = .clear
@@ -151,7 +139,6 @@ class MainViewController: KZSARViewController {
         virtualObjectInteraction.selectedObject?.removeAction(forKey: highlightActionKey)
         virtualObjectInteraction.selectedObject?.opacity = 1.0
         virtualObjectInteraction.deselectedObject()
-        validButton.isHidden = true
         currentVirtalObjectPos = nil
     }
     
