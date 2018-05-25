@@ -12,7 +12,7 @@ SPEC REPOS:
   "git@gitlab.com:KZSLAB/Specs.git":
     - KZSLAB-AR-Indicator
     - KZSLAB-AR-View
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - SnapKit
 
 SPEC CHECKSUMS:
@@ -22,4 +22,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ae50850aee2c002d911034a94e64ea5581a07234
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
