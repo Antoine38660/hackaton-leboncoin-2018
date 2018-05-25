@@ -53,7 +53,7 @@ class MainViewController: KZSARViewController {
     /// true if the modal is presented, otherwise false.
     internal var modalIsOpened = false
     
-    public var adSelected: Ad?
+    public var adSelected: LeboncoinElement?
     
     // MARK: - Setup
     override func viewDidLoad() {
@@ -144,12 +144,7 @@ class MainViewController: KZSARViewController {
     
     /// Restart the current AR Session.
     func restartExperience() {
-        guard !virtualObjectLoader.isLoading else { return }
-        
-        deselectCurrentObject()
-        statusViewController.cancelAllScheduledMessages()
-        virtualObjectLoader.removeAllVirtualObjects()
-        resetTracking()
+        dismiss(animated: true, completion: nil)
     }
     
     /// Insert a Virtual Object to the current center position.
