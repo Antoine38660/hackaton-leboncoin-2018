@@ -12,6 +12,8 @@
 		7186C07720B8333B00DC60E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07520B8333B00DC60E3 /* Main.storyboard */; };
 		7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07820B8333C00DC60E3 /* Assets.xcassets */; };
 		7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */; };
+		7199580B20B868490036C53F /* LBCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7199580A20B868490036C53F /* LBCService.swift */; };
+		7199580D20B8845F0036C53F /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7199580C20B8845F0036C53F /* ProductTableViewCell.swift */; };
 		7374EFED20B83A3300E28BE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7374EFEC20B83A3300E28BE8 /* Podfile */; };
 		7374EFF320B8458C00E28BE8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */; };
 		7374EFF620B8621600E28BE8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFF520B8621600E28BE8 /* ModalViewController.swift */; };
@@ -54,6 +56,8 @@
 		7186C07820B8333C00DC60E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7186C07B20B8333C00DC60E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7186C07D20B8333C00DC60E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7199580A20B868490036C53F /* LBCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCService.swift; sourceTree = "<group>"; };
+		7199580C20B8845F0036C53F /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		7374EFEC20B83A3300E28BE8 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
 		7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		7374EFF520B8621600E28BE8 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		7186C06E20B8333B00DC60E3 /* hackaton-leboncoin */ = {
 			isa = PBXGroup;
 			children = (
+				7199580820B868240036C53F /* Utilities */,
 				7186C06F20B8333B00DC60E3 /* AppDelegate.swift */,
 				7186C07520B8333B00DC60E3 /* Main.storyboard */,
 				7374EFEE20B8454700E28BE8 /* Features */,
@@ -141,6 +146,22 @@
 				7186C07D20B8333C00DC60E3 /* Info.plist */,
 			);
 			path = "hackaton-leboncoin";
+			sourceTree = "<group>";
+		};
+		7199580820B868240036C53F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7199580920B8682C0036C53F /* Network */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7199580920B8682C0036C53F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7199580A20B868490036C53F /* LBCService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		7374EFEE20B8454700E28BE8 /* Features */ = {
@@ -173,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */,
+				7199580C20B8845F0036C53F /* ProductTableViewCell.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -353,19 +375,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FanMenu/FanMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/KZSLAB-AR-Indicator/KZSLAB_AR_Indicator.framework",
 				"${BUILT_PRODUCTS_DIR}/KZSLAB-AR-View/KZSLAB_AR_View.framework",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FanMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KZSLAB_AR_Indicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KZSLAB_AR_View.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -417,6 +445,8 @@
 				7374F03120B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift in Sources */,
 				7374F03320B8744B00E28BE8 /* MainViewController+Status.swift in Sources */,
 				7374F01D20B871E200E28BE8 /* CatalogCollectionViewCell.swift in Sources */,
+				7199580B20B868490036C53F /* LBCService.swift in Sources */,
+				7199580D20B8845F0036C53F /* ProductTableViewCell.swift in Sources */,
 				7186C07020B8333B00DC60E3 /* AppDelegate.swift in Sources */,
 				7374EFFC20B8624300E28BE8 /* ModalInteractiveTransition.swift in Sources */,
 				7374F02720B8728300E28BE8 /* LineView.swift in Sources */,
@@ -575,6 +605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,6 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,5 +9,7 @@
 import Foundation
 
 struct Product {
-    
+    var price: Float
+    var date: String
+    var title: String
 }
