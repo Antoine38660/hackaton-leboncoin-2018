@@ -34,6 +34,10 @@
             </view>
             <viewLayoutGuide key="safeArea" id="mZ2-1Z-y1j"/>
             <size key="customSize" width="150" height="150"/>
+            <connections>
+                <outlet property="priceLabel" destination="xH0-7L-yqo" id="xy4-OZ-lPT"/>
+                <outlet property="suggestionImageView" destination="92K-hE-5pX" id="NGX-E1-DUL"/>
+            </connections>
             <point key="canvasLocation" x="-146" y="101"/>
         </collectionViewCell>
     </objects>
