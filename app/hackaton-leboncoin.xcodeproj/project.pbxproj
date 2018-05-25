@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7186C07020B8333B00DC60E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186C06F20B8333B00DC60E3 /* AppDelegate.swift */; };
 		7186C07220B8333B00DC60E3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07120B8333B00DC60E3 /* art.scnassets */; };
-		7186C07420B8333B00DC60E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186C07320B8333B00DC60E3 /* ViewController.swift */; };
 		7186C07720B8333B00DC60E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07520B8333B00DC60E3 /* Main.storyboard */; };
 		7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07820B8333C00DC60E3 /* Assets.xcassets */; };
 		7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */; };
@@ -51,7 +50,6 @@
 		7186C06C20B8333B00DC60E3 /* hackaton-leboncoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaton-leboncoin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7186C06F20B8333B00DC60E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7186C07120B8333B00DC60E3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		7186C07320B8333B00DC60E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7186C07620B8333B00DC60E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7186C07820B8333C00DC60E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7186C07B20B8333C00DC60E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				7374F01420B8682300E28BE8 /* Catalog */,
 				7374F00E20B8670300E28BE8 /* Info View */,
 				7374EFF420B8620400E28BE8 /* Modal */,
-				7374EFF120B8457300E28BE8 /* ARScene */,
 				7374EFF020B8456000E28BE8 /* Products */,
 			);
 			path = Features;
@@ -178,14 +175,6 @@
 				7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */,
 			);
 			path = Products;
-			sourceTree = "<group>";
-		};
-		7374EFF120B8457300E28BE8 /* ARScene */ = {
-			isa = PBXGroup;
-			children = (
-				7186C07320B8333B00DC60E3 /* ViewController.swift */,
-			);
-			path = ARScene;
 			sourceTree = "<group>";
 		};
 		7374EFF420B8620400E28BE8 /* Modal */ = {
@@ -423,7 +412,6 @@
 				7374F00820B863EA00E28BE8 /* BoolExtension.swift in Sources */,
 				7374EFF320B8458C00E28BE8 /* ProductsViewController.swift in Sources */,
 				7374EFFE20B8625100E28BE8 /* ModalTransitionAnimator.swift in Sources */,
-				7186C07420B8333B00DC60E3 /* ViewController.swift in Sources */,
 				7374F01320B867E100E28BE8 /* Navigatable.swift in Sources */,
 				7374F01820B86D4100E28BE8 /* Product.swift in Sources */,
 				7374F03120B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift in Sources */,
