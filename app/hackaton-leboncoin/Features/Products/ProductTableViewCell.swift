@@ -36,5 +36,20 @@ class ProductTableViewCell: UITableViewCell, Bindable {
         if let imgUrl = obj.images.urls.first {
             adImageView.downloadedFrom(link: imgUrl)
         }
+        
+        
+        
+        
+        // Test
+        if let badgeAR = UIImage(named: "ARKit-Badge") {
+            let sourceSize = adImageView.frame.size
+            let factor: CGFloat = 1 / 3
+            let width = sourceSize.width * factor
+            let height: CGFloat = 20.0
+            let view = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: 0),
+                                                 size: CGSize(width: width, height: height)))
+            view.image = badgeAR
+            adImageView.addSubview(view)
+        }
     }
 }

@@ -60,6 +60,7 @@ extension ProductsViewController: UITableViewDataSource {
         
         let ad = data[indexPath.row]
         cell.bind(object: ad)
+        
         return cell
     }
 }
