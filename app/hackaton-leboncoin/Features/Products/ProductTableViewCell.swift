@@ -37,9 +37,6 @@ class ProductTableViewCell: UITableViewCell, Bindable {
             adImageView.downloadedFrom(link: imgUrl)
         }
         
-        
-        
-        
         // Test
         if let _ = obj.model {
             if let badgeAR = UIImage(named: "ARKit-Badge") {

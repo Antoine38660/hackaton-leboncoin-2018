@@ -23,6 +23,21 @@ class ProductDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        
+        let arButton = UIBarButtonItem(title: "AR",
+                                       style: .done,
+                                       target: self,
+                                       action: #selector(goToARView))
+        if let _ = navigationController {
+            navigationItem.rightBarButtonItem = arButton
+        }
+    }
+    
+    @objc
+    func goToARView() {
+        let vc = MainViewController.instantiateFromStoryboard()
+        vc.adSelected = ad
+        present(vc, animated: true, completion: nil)
     }
     
     private func loadData() {

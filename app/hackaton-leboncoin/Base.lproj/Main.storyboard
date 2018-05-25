@@ -218,7 +218,7 @@
         <!--Main View Controller-->
         <scene sceneID="Pks-zK-gX5">
             <objects>
-                <viewController id="1Sl-u8-tzx" customClass="MainViewController" customModule="hackaton_leboncoin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="1Sl-u8-tzx" customClass="MainViewController" customModule="hackaton_leboncoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pq8-Gg-Mrm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
