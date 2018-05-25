@@ -53,7 +53,7 @@ class MainViewController: KZSARViewController {
     /// true if the modal is presented, otherwise false.
     internal var modalIsOpened = false
     
-    public var productSelected: Product?
+    public var adSelected: Ad?
     
     // MARK: - Setup
     override func viewDidLoad() {

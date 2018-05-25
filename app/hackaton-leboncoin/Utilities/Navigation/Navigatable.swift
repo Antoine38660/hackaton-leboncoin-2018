@@ -52,3 +52,13 @@ extension ProductDetailsViewController: Navigatable {
         return "ProductDetailsViewController"
     }
 }
+
+extension MainViewController: Navigatable {
+    static var storyboardName: String {
+        return "Main"
+    }
+    
+    static var storyboardId: String {
+        return "MainViewController"
+    }
+}

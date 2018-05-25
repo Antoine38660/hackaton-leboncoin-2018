@@ -37,9 +37,6 @@ class ProductTableViewCell: UITableViewCell, Bindable {
             adImageView.downloadedFrom(link: imgUrl)
         }
         
-        
-        
-        
         // Test
         if let badgeAR = UIImage(named: "ARKit-Badge") {
             let sourceSize = adImageView.frame.size
