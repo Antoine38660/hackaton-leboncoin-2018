@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="olj-st-BcA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="olj-st-BcA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,10 +26,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Products View Controller-->
         <scene sceneID="bLy-jy-P9k">
             <objects>
-                <viewController id="hnb-E7-Vi2" sceneMemberID="viewController">
+                <viewController id="hnb-E7-Vi2" customClass="ProductsViewController" customModule="hackaton_leboncoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zPY-wm-RNG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,9 @@
                         <viewLayoutGuide key="safeArea" id="c2L-bV-WFK"/>
                     </view>
                     <navigationItem key="navigationItem" id="2bT-M1-eXY"/>
+                    <connections>
+                        <outlet property="tableView" destination="a2p-iA-GPd" id="Adc-JJ-IZm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSc-9M-ZRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

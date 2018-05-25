@@ -14,6 +14,7 @@
 		7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07820B8333C00DC60E3 /* Assets.xcassets */; };
 		7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */; };
 		7374EFED20B83A3300E28BE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7374EFEC20B83A3300E28BE8 /* Podfile */; };
+		7374EFF320B8458C00E28BE8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */; };
 		CF6DA5E64397F021DBB05F2E /* Pods_hackaton_leboncoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		7186C07B20B8333C00DC60E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7186C07D20B8333C00DC60E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7374EFEC20B83A3300E28BE8 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
+		7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaton_leboncoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB06851B21EC3411A0C603 /* Pods-hackaton-leboncoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton-leboncoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,15 +77,48 @@
 		7186C06E20B8333B00DC60E3 /* hackaton-leboncoin */ = {
 			isa = PBXGroup;
 			children = (
+				7374EFEE20B8454700E28BE8 /* Features */,
+				7374EFEF20B8455200E28BE8 /* Resources */,
 				7186C06F20B8333B00DC60E3 /* AppDelegate.swift */,
-				7186C07120B8333B00DC60E3 /* art.scnassets */,
-				7186C07320B8333B00DC60E3 /* ViewController.swift */,
 				7186C07520B8333B00DC60E3 /* Main.storyboard */,
-				7186C07820B8333C00DC60E3 /* Assets.xcassets */,
 				7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */,
 				7186C07D20B8333C00DC60E3 /* Info.plist */,
 			);
 			path = "hackaton-leboncoin";
+			sourceTree = "<group>";
+		};
+		7374EFEE20B8454700E28BE8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7374EFF120B8457300E28BE8 /* ARScene */,
+				7374EFF020B8456000E28BE8 /* Products */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7374EFEF20B8455200E28BE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7186C07120B8333B00DC60E3 /* art.scnassets */,
+				7186C07820B8333C00DC60E3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7374EFF020B8456000E28BE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		7374EFF120B8457300E28BE8 /* ARScene */ = {
+			isa = PBXGroup;
+			children = (
+				7186C07320B8333B00DC60E3 /* ViewController.swift */,
+			);
+			path = ARScene;
 			sourceTree = "<group>";
 		};
 		FE2BE65303EBD715891BA812 /* Frameworks */ = {
@@ -212,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7374EFF320B8458C00E28BE8 /* ProductsViewController.swift in Sources */,
 				7186C07420B8333B00DC60E3 /* ViewController.swift in Sources */,
 				7186C07020B8333B00DC60E3 /* AppDelegate.swift in Sources */,
 			);
@@ -361,7 +397,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kaizen-solutions.hackaton-leboncoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -377,7 +416,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kaizen-solutions.hackaton-leboncoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
