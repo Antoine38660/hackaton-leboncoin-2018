@@ -135,7 +135,6 @@
 		7186C06E20B8333B00DC60E3 /* hackaton-leboncoin */ = {
 			isa = PBXGroup;
 			children = (
-				7199580820B868240036C53F /* Utilities */,
 				7186C06F20B8333B00DC60E3 /* AppDelegate.swift */,
 				7186C07520B8333B00DC60E3 /* Main.storyboard */,
 				7374EFEE20B8454700E28BE8 /* Features */,
@@ -146,14 +145,6 @@
 				7186C07D20B8333C00DC60E3 /* Info.plist */,
 			);
 			path = "hackaton-leboncoin";
-			sourceTree = "<group>";
-		};
-		7199580820B868240036C53F /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				7199580920B8682C0036C53F /* Network */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		7199580920B8682C0036C53F /* Network */ = {
@@ -214,6 +205,7 @@
 		7374F00120B8638E00E28BE8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7199580920B8682C0036C53F /* Network */,
 				7374F02320B8728300E28BE8 /* PrototypeCell */,
 				7374F01120B867CF00E28BE8 /* Navigation */,
 				7374F02120B8728300E28BE8 /* EdgeInsetLabel.swift */,
