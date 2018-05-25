@@ -16,22 +16,18 @@ class ProductsViewController: UIViewController {
     
     // MARK: - Properties
     
-    /// PNPC Webservice
-    private var webService = MoyaProvider<LBCService>()
-    
     // MARK: - Setup
     override func viewDidLoad() {
         super.viewDidLoad()
-        webService.request(.search(filters: ["location": ["region": 22, "department": 38]], limit: nil, sort_by: nil, sort_order: nil, owner_type: nil),
-                           completion: { (result) in
-                            switch result {
-                            case .success(let response):
-                                print(response.debugDescription)
-                                break
-                            case .failure(let error): print(error.localizedDescription)
-                                break
-                            }
-        })
+
+        let data = LeboncoinData().getJson().data(using: .utf8)!
+        let jsonDecoder = JSONDecoder()
+        do {
+            let leboncoin = try jsonDecoder.decode(Leboncoin.self, from: data)
+            print(leboncoin)
+        } catch let error {
+            print(error)
+        }
+        
     }
-    
 }
