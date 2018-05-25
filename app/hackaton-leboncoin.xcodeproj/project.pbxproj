@@ -46,6 +46,8 @@
 		7374F03120B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03020B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift */; };
 		7374F03320B8744B00E28BE8 /* MainViewController+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03220B8744B00E28BE8 /* MainViewController+Status.swift */; };
 		7374F03520B8748400E28BE8 /* KZSARStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03420B8748400E28BE8 /* KZSARStatusMessage.swift */; };
+		7374F03B20B8A84900E28BE8 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7374F03A20B8A84900E28BE8 /* ProductTableViewCell.xib */; };
+		7374F03D20B8A98F00E28BE8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03C20B8A98F00E28BE8 /* UIImageExtension.swift */; };
 		CF6DA5E64397F021DBB05F2E /* Pods_hackaton_leboncoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		7374F03020B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+KZSARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		7374F03220B8744B00E28BE8 /* MainViewController+Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Status.swift"; sourceTree = "<group>"; };
 		7374F03420B8748400E28BE8 /* KZSARStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KZSARStatusMessage.swift; sourceTree = "<group>"; };
+		7374F03A20B8A84900E28BE8 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		7374F03C20B8A98F00E28BE8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaton_leboncoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB06851B21EC3411A0C603 /* Pods-hackaton-leboncoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton-leboncoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +212,7 @@
 			children = (
 				7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */,
 				7199580C20B8845F0036C53F /* ProductTableViewCell.swift */,
+				7374F03A20B8A84900E28BE8 /* ProductTableViewCell.xib */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				7374F00520B863D300E28BE8 /* UIColorExtension.swift */,
 				7374F00720B863EA00E28BE8 /* BoolExtension.swift */,
 				7374F02A20B8735D00E28BE8 /* SearchBarExtension.swift */,
+				7374F03C20B8A98F00E28BE8 /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				7374EFED20B83A3300E28BE8 /* Podfile in Resources */,
 				7186C07220B8333B00DC60E3 /* art.scnassets in Resources */,
 				7374F01F20B8720C00E28BE8 /* CatalogCollectionViewCell.xib in Resources */,
+				7374F03B20B8A84900E28BE8 /* ProductTableViewCell.xib in Resources */,
 				7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */,
 				7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */,
 				7186C07720B8333B00DC60E3 /* Main.storyboard in Resources */,
@@ -460,6 +467,7 @@
 				7374F01820B86D4100E28BE8 /* Product.swift in Sources */,
 				7374F03120B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift in Sources */,
 				7374F03320B8744B00E28BE8 /* MainViewController+Status.swift in Sources */,
+				7374F03D20B8A98F00E28BE8 /* UIImageExtension.swift in Sources */,
 				7374F01D20B871E200E28BE8 /* CatalogCollectionViewCell.swift in Sources */,
 				7199580B20B868490036C53F /* LBCService.swift in Sources */,
 				7199580D20B8845F0036C53F /* ProductTableViewCell.swift in Sources */,
@@ -619,7 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P7969F84AR;
+				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -639,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P7969F84AR;
+				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
