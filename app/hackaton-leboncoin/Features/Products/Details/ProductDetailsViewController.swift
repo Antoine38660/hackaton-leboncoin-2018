@@ -11,6 +11,7 @@ import UIKit
 class ProductDetailsViewController: UIViewController {
     // MARK: - IBOutlet
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var adImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -22,8 +23,11 @@ class ProductDetailsViewController: UIViewController {
     // MARK: - Setup
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         loadData()
-        
+    }
+    
+    private func setupView() {
         let arButton = UIBarButtonItem(title: "AR",
                                        style: .done,
                                        target: self,
@@ -31,6 +35,8 @@ class ProductDetailsViewController: UIViewController {
         if let _ = navigationController {
             navigationItem.rightBarButtonItem = arButton
         }
+        
+        collectionView.dataSource = self
     }
     
     @objc

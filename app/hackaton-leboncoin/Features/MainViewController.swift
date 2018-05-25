@@ -185,11 +185,11 @@ class MainViewController: KZSARViewController {
     
     /// Get current frame and save it into Images Library
     private func takesPicture() {
-        guard let _ = session.currentFrame else { return }
+        /*guard let _ = session.currentFrame else { return }
         let image = sceneView.snapshot()
         DispatchQueue.main.async {
             UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
-        }
+        }*/
     }
     
     /// Called as callback when an image is saved into Image Library.
