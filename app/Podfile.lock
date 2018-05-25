@@ -1,25 +1,39 @@
 PODS:
+  - Alamofire (4.7.2)
   - KZSLAB-AR-Indicator (1.0.2)
   - KZSLAB-AR-View (1.0.3):
     - KZSLAB-AR-Indicator (= 1.0.2)
     - SnapKit (~> 4.0.0)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.4)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - KZSLAB-AR-View
+  - Moya (~> 11.0)
 
 SPEC REPOS:
   "git@gitlab.com:KZSLAB/Specs.git":
     - KZSLAB-AR-Indicator
     - KZSLAB-AR-View
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Moya
+    - Result
     - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   KZSLAB-AR-Indicator: 2fc6d7ecbf5ca4bb2d0bbd49cb9d1704cf42e89a
   KZSLAB-AR-View: 9bd3b429f9d25eef3e4e9afdc50d7173bf3bde77
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: ae50850aee2c002d911034a94e64ea5581a07234
+PODFILE CHECKSUM: 73a1fb737ce8c3bad68c693d342808bb00319338
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
