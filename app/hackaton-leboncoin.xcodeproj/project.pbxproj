@@ -15,6 +15,34 @@
 		7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */; };
 		7374EFED20B83A3300E28BE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7374EFEC20B83A3300E28BE8 /* Podfile */; };
 		7374EFF320B8458C00E28BE8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */; };
+		7374EFF620B8621600E28BE8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFF520B8621600E28BE8 /* ModalViewController.swift */; };
+		7374EFF820B8622C00E28BE8 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFF720B8622C00E28BE8 /* ModalPresentationController.swift */; };
+		7374EFFA20B8623700E28BE8 /* ModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFF920B8623700E28BE8 /* ModalTransitionDelegate.swift */; };
+		7374EFFC20B8624300E28BE8 /* ModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFFB20B8624300E28BE8 /* ModalInteractiveTransition.swift */; };
+		7374EFFE20B8625100E28BE8 /* ModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFFD20B8625100E28BE8 /* ModalTransitionAnimator.swift */; };
+		7374F00020B8634B00E28BE8 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374EFFF20B8634B00E28BE8 /* Stylesheet.swift */; };
+		7374F00420B8639C00E28BE8 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F00320B8639C00E28BE8 /* CGPointExtension.swift */; };
+		7374F00620B863D300E28BE8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F00520B863D300E28BE8 /* UIColorExtension.swift */; };
+		7374F00820B863EA00E28BE8 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F00720B863EA00E28BE8 /* BoolExtension.swift */; };
+		7374F00A20B8641E00E28BE8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F00920B8641E00E28BE8 /* MainViewController.swift */; };
+		7374F00D20B866D400E28BE8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F00C20B866D400E28BE8 /* Menu.swift */; };
+		7374F01020B8671200E28BE8 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F00F20B8671200E28BE8 /* StatusViewController.swift */; };
+		7374F01320B867E100E28BE8 /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F01220B867E100E28BE8 /* Navigatable.swift */; };
+		7374F01620B8683100E28BE8 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F01520B8683100E28BE8 /* CatalogViewController.swift */; };
+		7374F01820B86D4100E28BE8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F01720B86D4100E28BE8 /* Product.swift */; };
+		7374F01A20B871C500E28BE8 /* CatalogViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F01920B871C500E28BE8 /* CatalogViewController+UICollectionView.swift */; };
+		7374F01D20B871E200E28BE8 /* CatalogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F01C20B871E200E28BE8 /* CatalogCollectionViewCell.swift */; };
+		7374F01F20B8720C00E28BE8 /* CatalogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7374F01E20B8720C00E28BE8 /* CatalogCollectionViewCell.xib */; };
+		7374F02620B8728300E28BE8 /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F02120B8728300E28BE8 /* EdgeInsetLabel.swift */; };
+		7374F02720B8728300E28BE8 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F02220B8728300E28BE8 /* LineView.swift */; };
+		7374F02820B8728300E28BE8 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F02420B8728300E28BE8 /* Bindable.swift */; };
+		7374F02920B8728300E28BE8 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F02520B8728300E28BE8 /* ReusableView.swift */; };
+		7374F02B20B8735D00E28BE8 /* SearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F02A20B8735D00E28BE8 /* SearchBarExtension.swift */; };
+		7374F02D20B873CD00E28BE8 /* MainViewController+ModalPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F02C20B873CD00E28BE8 /* MainViewController+ModalPresentationDelegate.swift */; };
+		7374F02F20B873F300E28BE8 /* MainViewController+CatalogDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F02E20B873F300E28BE8 /* MainViewController+CatalogDelegate.swift */; };
+		7374F03120B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03020B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift */; };
+		7374F03320B8744B00E28BE8 /* MainViewController+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03220B8744B00E28BE8 /* MainViewController+Status.swift */; };
+		7374F03520B8748400E28BE8 /* KZSARStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03420B8748400E28BE8 /* KZSARStatusMessage.swift */; };
 		CF6DA5E64397F021DBB05F2E /* Pods_hackaton_leboncoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +58,34 @@
 		7186C07D20B8333C00DC60E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7374EFEC20B83A3300E28BE8 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
 		7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		7374EFF520B8621600E28BE8 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		7374EFF720B8622C00E28BE8 /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		7374EFF920B8623700E28BE8 /* ModalTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitionDelegate.swift; sourceTree = "<group>"; };
+		7374EFFB20B8624300E28BE8 /* ModalInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalInteractiveTransition.swift; sourceTree = "<group>"; };
+		7374EFFD20B8625100E28BE8 /* ModalTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		7374EFFF20B8634B00E28BE8 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		7374F00320B8639C00E28BE8 /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
+		7374F00520B863D300E28BE8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		7374F00720B863EA00E28BE8 /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
+		7374F00920B8641E00E28BE8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7374F00C20B866D400E28BE8 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		7374F00F20B8671200E28BE8 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		7374F01220B867E100E28BE8 /* Navigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
+		7374F01520B8683100E28BE8 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		7374F01720B86D4100E28BE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7374F01920B871C500E28BE8 /* CatalogViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatalogViewController+UICollectionView.swift"; sourceTree = "<group>"; };
+		7374F01C20B871E200E28BE8 /* CatalogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewCell.swift; sourceTree = "<group>"; };
+		7374F01E20B8720C00E28BE8 /* CatalogCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatalogCollectionViewCell.xib; sourceTree = "<group>"; };
+		7374F02120B8728300E28BE8 /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
+		7374F02220B8728300E28BE8 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		7374F02420B8728300E28BE8 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		7374F02520B8728300E28BE8 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		7374F02A20B8735D00E28BE8 /* SearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarExtension.swift; sourceTree = "<group>"; };
+		7374F02C20B873CD00E28BE8 /* MainViewController+ModalPresentationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ModalPresentationDelegate.swift"; sourceTree = "<group>"; };
+		7374F02E20B873F300E28BE8 /* MainViewController+CatalogDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CatalogDelegate.swift"; sourceTree = "<group>"; };
+		7374F03020B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+KZSARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		7374F03220B8744B00E28BE8 /* MainViewController+Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Status.swift"; sourceTree = "<group>"; };
+		7374F03420B8748400E28BE8 /* KZSARStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KZSARStatusMessage.swift; sourceTree = "<group>"; };
 		AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaton_leboncoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB06851B21EC3411A0C603 /* Pods-hackaton-leboncoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton-leboncoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,10 +133,12 @@
 		7186C06E20B8333B00DC60E3 /* hackaton-leboncoin */ = {
 			isa = PBXGroup;
 			children = (
-				7374EFEE20B8454700E28BE8 /* Features */,
-				7374EFEF20B8455200E28BE8 /* Resources */,
 				7186C06F20B8333B00DC60E3 /* AppDelegate.swift */,
 				7186C07520B8333B00DC60E3 /* Main.storyboard */,
+				7374EFEE20B8454700E28BE8 /* Features */,
+				7374F00B20B866C100E28BE8 /* Models */,
+				7374F00120B8638E00E28BE8 /* Utilities */,
+				7374EFEF20B8455200E28BE8 /* Resources */,
 				7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */,
 				7186C07D20B8333C00DC60E3 /* Info.plist */,
 			);
@@ -90,6 +148,15 @@
 		7374EFEE20B8454700E28BE8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7374EFFF20B8634B00E28BE8 /* Stylesheet.swift */,
+				7374F00920B8641E00E28BE8 /* MainViewController.swift */,
+				7374F02C20B873CD00E28BE8 /* MainViewController+ModalPresentationDelegate.swift */,
+				7374F02E20B873F300E28BE8 /* MainViewController+CatalogDelegate.swift */,
+				7374F03020B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift */,
+				7374F03220B8744B00E28BE8 /* MainViewController+Status.swift */,
+				7374F01420B8682300E28BE8 /* Catalog */,
+				7374F00E20B8670300E28BE8 /* Info View */,
+				7374EFF420B8620400E28BE8 /* Modal */,
 				7374EFF120B8457300E28BE8 /* ARScene */,
 				7374EFF020B8456000E28BE8 /* Products */,
 			);
@@ -119,6 +186,95 @@
 				7186C07320B8333B00DC60E3 /* ViewController.swift */,
 			);
 			path = ARScene;
+			sourceTree = "<group>";
+		};
+		7374EFF420B8620400E28BE8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				7374EFF520B8621600E28BE8 /* ModalViewController.swift */,
+				7374EFF720B8622C00E28BE8 /* ModalPresentationController.swift */,
+				7374EFF920B8623700E28BE8 /* ModalTransitionDelegate.swift */,
+				7374EFFB20B8624300E28BE8 /* ModalInteractiveTransition.swift */,
+				7374EFFD20B8625100E28BE8 /* ModalTransitionAnimator.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		7374F00120B8638E00E28BE8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7374F02320B8728300E28BE8 /* PrototypeCell */,
+				7374F01120B867CF00E28BE8 /* Navigation */,
+				7374F02120B8728300E28BE8 /* EdgeInsetLabel.swift */,
+				7374F02220B8728300E28BE8 /* LineView.swift */,
+				7374F00220B8639300E28BE8 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7374F00220B8639300E28BE8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7374F00320B8639C00E28BE8 /* CGPointExtension.swift */,
+				7374F00520B863D300E28BE8 /* UIColorExtension.swift */,
+				7374F00720B863EA00E28BE8 /* BoolExtension.swift */,
+				7374F02A20B8735D00E28BE8 /* SearchBarExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7374F00B20B866C100E28BE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7374F00C20B866D400E28BE8 /* Menu.swift */,
+				7374F01720B86D4100E28BE8 /* Product.swift */,
+				7374F03420B8748400E28BE8 /* KZSARStatusMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7374F00E20B8670300E28BE8 /* Info View */ = {
+			isa = PBXGroup;
+			children = (
+				7374F00F20B8671200E28BE8 /* StatusViewController.swift */,
+			);
+			path = "Info View";
+			sourceTree = "<group>";
+		};
+		7374F01120B867CF00E28BE8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				7374F01220B867E100E28BE8 /* Navigatable.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		7374F01420B8682300E28BE8 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				7374F01520B8683100E28BE8 /* CatalogViewController.swift */,
+				7374F01920B871C500E28BE8 /* CatalogViewController+UICollectionView.swift */,
+				7374F01B20B871D400E28BE8 /* PrototypeCell */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		7374F01B20B871D400E28BE8 /* PrototypeCell */ = {
+			isa = PBXGroup;
+			children = (
+				7374F01E20B8720C00E28BE8 /* CatalogCollectionViewCell.xib */,
+				7374F01C20B871E200E28BE8 /* CatalogCollectionViewCell.swift */,
+			);
+			path = PrototypeCell;
+			sourceTree = "<group>";
+		};
+		7374F02320B8728300E28BE8 /* PrototypeCell */ = {
+			isa = PBXGroup;
+			children = (
+				7374F02420B8728300E28BE8 /* Bindable.swift */,
+				7374F02520B8728300E28BE8 /* ReusableView.swift */,
+			);
+			path = PrototypeCell;
 			sourceTree = "<group>";
 		};
 		FE2BE65303EBD715891BA812 /* Frameworks */ = {
@@ -191,6 +347,7 @@
 			files = (
 				7374EFED20B83A3300E28BE8 /* Podfile in Resources */,
 				7186C07220B8333B00DC60E3 /* art.scnassets in Resources */,
+				7374F01F20B8720C00E28BE8 /* CatalogCollectionViewCell.xib in Resources */,
 				7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */,
 				7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */,
 				7186C07720B8333B00DC60E3 /* Main.storyboard in Resources */,
@@ -207,14 +364,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FanMenu/FanMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/KZSLAB-AR-Indicator/KZSLAB_AR_Indicator.framework",
 				"${BUILT_PRODUCTS_DIR}/KZSLAB-AR-View/KZSLAB_AR_View.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FanMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KZSLAB_AR_Indicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KZSLAB_AR_View.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,9 +410,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7374EFF620B8621600E28BE8 /* ModalViewController.swift in Sources */,
+				7374F02B20B8735D00E28BE8 /* SearchBarExtension.swift in Sources */,
+				7374F00A20B8641E00E28BE8 /* MainViewController.swift in Sources */,
+				7374F00D20B866D400E28BE8 /* Menu.swift in Sources */,
+				7374F02920B8728300E28BE8 /* ReusableView.swift in Sources */,
+				7374F02620B8728300E28BE8 /* EdgeInsetLabel.swift in Sources */,
+				7374EFF820B8622C00E28BE8 /* ModalPresentationController.swift in Sources */,
+				7374F02820B8728300E28BE8 /* Bindable.swift in Sources */,
+				7374F01020B8671200E28BE8 /* StatusViewController.swift in Sources */,
+				7374F00420B8639C00E28BE8 /* CGPointExtension.swift in Sources */,
+				7374F00820B863EA00E28BE8 /* BoolExtension.swift in Sources */,
 				7374EFF320B8458C00E28BE8 /* ProductsViewController.swift in Sources */,
+				7374EFFE20B8625100E28BE8 /* ModalTransitionAnimator.swift in Sources */,
 				7186C07420B8333B00DC60E3 /* ViewController.swift in Sources */,
+				7374F01320B867E100E28BE8 /* Navigatable.swift in Sources */,
+				7374F01820B86D4100E28BE8 /* Product.swift in Sources */,
+				7374F03120B8741F00E28BE8 /* MainViewController+KZSARSCNViewDelegate.swift in Sources */,
+				7374F03320B8744B00E28BE8 /* MainViewController+Status.swift in Sources */,
+				7374F01D20B871E200E28BE8 /* CatalogCollectionViewCell.swift in Sources */,
 				7186C07020B8333B00DC60E3 /* AppDelegate.swift in Sources */,
+				7374EFFC20B8624300E28BE8 /* ModalInteractiveTransition.swift in Sources */,
+				7374F02720B8728300E28BE8 /* LineView.swift in Sources */,
+				7374F00620B863D300E28BE8 /* UIColorExtension.swift in Sources */,
+				7374F02F20B873F300E28BE8 /* MainViewController+CatalogDelegate.swift in Sources */,
+				7374EFFA20B8623700E28BE8 /* ModalTransitionDelegate.swift in Sources */,
+				7374F03520B8748400E28BE8 /* KZSARStatusMessage.swift in Sources */,
+				7374F00020B8634B00E28BE8 /* Stylesheet.swift in Sources */,
+				7374F01620B8683100E28BE8 /* CatalogViewController.swift in Sources */,
+				7374F02D20B873CD00E28BE8 /* MainViewController+ModalPresentationDelegate.swift in Sources */,
+				7374F01A20B871C500E28BE8 /* CatalogViewController+UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

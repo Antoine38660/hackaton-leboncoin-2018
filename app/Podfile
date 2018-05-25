@@ -11,4 +11,5 @@ target 'hackaton-leboncoin' do
 
   # Pods for hackaton-leboncoin
   pod 'KZSLAB-AR-View'
+  pod 'FanMenu'
 end
