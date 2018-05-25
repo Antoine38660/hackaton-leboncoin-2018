@@ -13,9 +13,12 @@
 		7186C07720B8333B00DC60E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07520B8333B00DC60E3 /* Main.storyboard */; };
 		7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07820B8333C00DC60E3 /* Assets.xcassets */; };
 		7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */; };
+		7374EFED20B83A3300E28BE8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7374EFEC20B83A3300E28BE8 /* Podfile */; };
+		CF6DA5E64397F021DBB05F2E /* Pods_hackaton_leboncoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F6612D34E0E11DE1B56CDD8 /* Pods-hackaton-leboncoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton-leboncoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin.release.xcconfig"; sourceTree = "<group>"; };
 		7186C06C20B8333B00DC60E3 /* hackaton-leboncoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaton-leboncoin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7186C06F20B8333B00DC60E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7186C07120B8333B00DC60E3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		7186C07820B8333C00DC60E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7186C07B20B8333C00DC60E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7186C07D20B8333C00DC60E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7374EFEC20B83A3300E28BE8 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
+		AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaton_leboncoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFEB06851B21EC3411A0C603 /* Pods-hackaton-leboncoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton-leboncoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6DA5E64397F021DBB05F2E /* Pods_hackaton_leboncoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082814CD65727FB6E8D3A7E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFEB06851B21EC3411A0C603 /* Pods-hackaton-leboncoin.debug.xcconfig */,
+				3F6612D34E0E11DE1B56CDD8 /* Pods-hackaton-leboncoin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7186C06320B8333B00DC60E3 = {
 			isa = PBXGroup;
 			children = (
+				7374EFEC20B83A3300E28BE8 /* Podfile */,
 				7186C06E20B8333B00DC60E3 /* hackaton-leboncoin */,
 				7186C06D20B8333B00DC60E3 /* Products */,
+				082814CD65727FB6E8D3A7E3 /* Pods */,
+				FE2BE65303EBD715891BA812 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = "hackaton-leboncoin";
 			sourceTree = "<group>";
 		};
+		FE2BE65303EBD715891BA812 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7186C08020B8333C00DC60E3 /* Build configuration list for PBXNativeTarget "hackaton-leboncoin" */;
 			buildPhases = (
+				162F33EC299B6D9F4FE05819 /* [CP] Check Pods Manifest.lock */,
 				7186C06820B8333B00DC60E3 /* Sources */,
 				7186C06920B8333B00DC60E3 /* Frameworks */,
 				7186C06A20B8333B00DC60E3 /* Resources */,
+				014D055CCB9A3145BF5E8315 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7374EFED20B83A3300E28BE8 /* Podfile in Resources */,
 				7186C07220B8333B00DC60E3 /* art.scnassets in Resources */,
 				7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */,
 				7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */,
@@ -133,6 +163,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		014D055CCB9A3145BF5E8315 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KZSLAB-AR-Indicator/KZSLAB_AR_Indicator.framework",
+				"${BUILT_PRODUCTS_DIR}/KZSLAB-AR-View/KZSLAB_AR_View.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KZSLAB_AR_Indicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KZSLAB_AR_View.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		162F33EC299B6D9F4FE05819 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hackaton-leboncoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7186C06820B8333B00DC60E3 /* Sources */ = {
@@ -282,15 +355,13 @@
 		};
 		7186C08120B8333C00DC60E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFEB06851B21EC3411A0C603 /* Pods-hackaton-leboncoin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P7969F84AR;
+				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kaizen-solutions.hackaton-leboncoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -300,15 +371,13 @@
 		};
 		7186C08220B8333C00DC60E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6612D34E0E11DE1B56CDD8 /* Pods-hackaton-leboncoin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P7969F84AR;
+				DEVELOPMENT_TEAM = 6N9PBAVWKR;
 				INFOPLIST_FILE = "hackaton-leboncoin/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kaizen-solutions.hackaton-leboncoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

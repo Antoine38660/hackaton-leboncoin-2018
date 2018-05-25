@@ -1,0 +1,25 @@
+PODS:
+  - KZSLAB-AR-Indicator (1.0.2)
+  - KZSLAB-AR-View (1.0.3):
+    - KZSLAB-AR-Indicator (= 1.0.2)
+    - SnapKit (~> 4.0.0)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - KZSLAB-AR-View
+
+SPEC REPOS:
+  "git@gitlab.com:KZSLAB/Specs.git":
+    - KZSLAB-AR-Indicator
+    - KZSLAB-AR-View
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+
+SPEC CHECKSUMS:
+  KZSLAB-AR-Indicator: 2fc6d7ecbf5ca4bb2d0bbd49cb9d1704cf42e89a
+  KZSLAB-AR-View: 9bd3b429f9d25eef3e4e9afdc50d7173bf3bde77
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: ae50850aee2c002d911034a94e64ea5581a07234
+
+COCOAPODS: 1.5.0
