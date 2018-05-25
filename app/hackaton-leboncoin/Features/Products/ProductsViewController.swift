@@ -60,10 +60,17 @@ extension ProductsViewController: UITableViewDataSource {
         
         let ad = data[indexPath.row]
         cell.bind(object: ad)
+        
         return cell
     }
 }
 
 extension ProductsViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let data = self.data else { return }
+        let ad = data[indexPath.row]
+        let vc = ProductDetailsViewController.instantiateFromStoryboard()
+        vc.ad = ad
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="1951.2" y="112.89355322338831"/>
         </scene>
-        <!--View Controller-->
+        <!--Product Details View Controller-->
         <scene sceneID="GYD-Eu-we4">
             <objects>
-                <viewController id="QHq-IB-EU1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductDetailsViewController" id="QHq-IB-EU1" customClass="ProductDetailsViewController" customModule="hackaton_leboncoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0XV-R8-jOL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +94,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iBe-fl-jyB"/>
                     </view>
+                    <connections>
+                        <outlet property="adImageView" destination="Hi2-aA-JaK" id="cNl-tl-zkV"/>
+                        <outlet property="descTextView" destination="98c-I4-8ju" id="1ld-ZE-bSO"/>
+                        <outlet property="priceLabel" destination="7E9-Ob-2bn" id="Zdb-Um-Nbl"/>
+                        <outlet property="titleLabel" destination="YBE-Nd-xPO" id="V4a-2f-Ajf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJu-6F-ZOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

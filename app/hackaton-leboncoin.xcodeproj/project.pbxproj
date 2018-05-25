@@ -48,6 +48,7 @@
 		7374F03520B8748400E28BE8 /* KZSARStatusMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03420B8748400E28BE8 /* KZSARStatusMessage.swift */; };
 		7374F03B20B8A84900E28BE8 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7374F03A20B8A84900E28BE8 /* ProductTableViewCell.xib */; };
 		7374F03D20B8A98F00E28BE8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03C20B8A98F00E28BE8 /* UIImageExtension.swift */; };
+		7374F04020B8AABC00E28BE8 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374F03F20B8AABC00E28BE8 /* ProductDetailsViewController.swift */; };
 		CF6DA5E64397F021DBB05F2E /* Pods_hackaton_leboncoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		7374F03420B8748400E28BE8 /* KZSARStatusMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KZSARStatusMessage.swift; sourceTree = "<group>"; };
 		7374F03A20B8A84900E28BE8 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		7374F03C20B8A98F00E28BE8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		7374F03F20B8AABC00E28BE8 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		AACCCE14634CE5B38B2D5022 /* Pods_hackaton_leboncoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaton_leboncoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB06851B21EC3411A0C603 /* Pods-hackaton-leboncoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton-leboncoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +212,7 @@
 		7374EFF020B8456000E28BE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				7374F03E20B8AAAB00E28BE8 /* Details */,
 				7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */,
 				7199580C20B8845F0036C53F /* ProductTableViewCell.swift */,
 				7374F03A20B8A84900E28BE8 /* ProductTableViewCell.xib */,
@@ -306,6 +309,14 @@
 				7374F02520B8728300E28BE8 /* ReusableView.swift */,
 			);
 			path = PrototypeCell;
+			sourceTree = "<group>";
+		};
+		7374F03E20B8AAAB00E28BE8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				7374F03F20B8AABC00E28BE8 /* ProductDetailsViewController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		FE2BE65303EBD715891BA812 /* Frameworks */ = {
@@ -476,6 +487,7 @@
 				7374F02720B8728300E28BE8 /* LineView.swift in Sources */,
 				7374F00620B863D300E28BE8 /* UIColorExtension.swift in Sources */,
 				7374F02F20B873F300E28BE8 /* MainViewController+CatalogDelegate.swift in Sources */,
+				7374F04020B8AABC00E28BE8 /* ProductDetailsViewController.swift in Sources */,
 				7374EFFA20B8623700E28BE8 /* ModalTransitionDelegate.swift in Sources */,
 				7374F03520B8748400E28BE8 /* KZSARStatusMessage.swift in Sources */,
 				7374F00020B8634B00E28BE8 /* Stylesheet.swift in Sources */,
