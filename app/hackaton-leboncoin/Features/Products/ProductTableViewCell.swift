@@ -28,12 +28,12 @@ class ProductTableViewCell: UITableViewCell, Bindable {
     
     func bind(object obj: Ad) {
         titleLabel.text = obj.subject
-        if let p = obj.price.first {
-            priceLabel.text = String(p)
+        if let p = obj.price?.first {
+            priceLabel.text = String(p) + " €"
         }
         
         dateLabel.text = obj.indexDate
-        if let imgUrl = obj.images.urls.first {
+        if let imgUrl = obj.images?.urlsThumb?.first {
             adImageView.downloadedFrom(link: imgUrl)
         }
     }
