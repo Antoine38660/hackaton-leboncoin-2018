@@ -8,7 +8,7 @@
 
 struct Menu {
     static let itemColor = 0xA4A4A4
-    static let mainColor = 0x00A654
+    static let mainColor = 0xE6733D
     
     enum Item {
         case main
