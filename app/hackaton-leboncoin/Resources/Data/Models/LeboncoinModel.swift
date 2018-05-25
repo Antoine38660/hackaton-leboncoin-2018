@@ -1,3 +1,11 @@
+//
+//  LeboncoinModel.swift
+//  hackaton-leboncoin
+//
+//  Created by Antoine BOISADAM on 25/05/2018.
+//  Copyright © 2018 Antoine BOISADAM. All rights reserved.
+//
+
 // To parse the JSON, add this file to your project and do:
 //
 //   let leboncoin = try? JSONDecoder().decode(Leboncoin.self, from: jsonData)
@@ -13,7 +21,7 @@ struct LeboncoinElement: Codable {
     let listID: Int?
     let location: Location?
     let price: Int?
-    let subject, url: String?
+    let subject, url, model: String?
     
     enum CodingKeys: String, CodingKey {
         case body
@@ -22,7 +30,7 @@ struct LeboncoinElement: Codable {
         case images
         case indexDate = "index_date"
         case listID = "list_id"
-        case location, price, subject, url
+        case location, price, subject, url, model
     }
 }
 

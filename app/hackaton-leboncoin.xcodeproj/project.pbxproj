@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7117AB3520B8C6070090E59A /* ISODate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117AB3420B8C6070090E59A /* ISODate.swift */; };
 		7155D4D120B89C8E008DEFEF /* LeboncoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155D4D020B89C8E008DEFEF /* LeboncoinModel.swift */; };
 		7186C07020B8333B00DC60E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186C06F20B8333B00DC60E3 /* AppDelegate.swift */; };
 		7186C07220B8333B00DC60E3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07120B8333B00DC60E3 /* art.scnassets */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		3F6612D34E0E11DE1B56CDD8 /* Pods-hackaton-leboncoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaton-leboncoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-hackaton-leboncoin/Pods-hackaton-leboncoin.release.xcconfig"; sourceTree = "<group>"; };
+		7117AB3420B8C6070090E59A /* ISODate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISODate.swift; sourceTree = "<group>"; };
 		7155D4D020B89C8E008DEFEF /* LeboncoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinModel.swift; sourceTree = "<group>"; };
 		7186C06C20B8333B00DC60E3 /* hackaton-leboncoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaton-leboncoin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7186C06F20B8333B00DC60E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				7374F02120B8728300E28BE8 /* EdgeInsetLabel.swift */,
 				7374F02220B8728300E28BE8 /* LineView.swift */,
 				7374F00220B8639300E28BE8 /* Extensions */,
+				7117AB3420B8C6070090E59A /* ISODate.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				7374F02620B8728300E28BE8 /* EdgeInsetLabel.swift in Sources */,
 				7374EFF820B8622C00E28BE8 /* ModalPresentationController.swift in Sources */,
 				7374F02820B8728300E28BE8 /* Bindable.swift in Sources */,
+				7117AB3520B8C6070090E59A /* ISODate.swift in Sources */,
 				7374F01020B8671200E28BE8 /* StatusViewController.swift in Sources */,
 				7374F00420B8639C00E28BE8 /* CGPointExtension.swift in Sources */,
 				7374F00820B863EA00E28BE8 /* BoolExtension.swift in Sources */,

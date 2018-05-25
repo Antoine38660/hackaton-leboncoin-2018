@@ -17,7 +17,7 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var descTextView: UITextView!
     
     // MARK: - Properties
-    public var ad: Ad?
+    public var ad: LeboncoinElement?
     
     // MARK: - Setup
     override func viewDidLoad() {
@@ -28,11 +28,11 @@ class ProductDetailsViewController: UIViewController {
     private func loadData() {
         guard let data = ad else { return }
         titleLabel.text = data.subject
-        if let p = data.price.first {
+        if let p = data.price {
             priceLabel.text = "\(p)€"
         }
         
-        if let imgUrl = data.images.urls.first {
+        if let imgUrl = data.images?.urls?.first {
             adImageView.downloadedFrom(link: imgUrl)
         }
         descTextView.text = data.body

@@ -15,7 +15,7 @@ class ProductsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    internal var data: [Ad]?
+    internal var data: [LeboncoinElement]?
     
     // MARK: - Setup
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class ProductsViewController: UIViewController {
         do {
             let leboncoin = try jsonDecoder.decode(Leboncoin.self, from: data)
             print(leboncoin)
-            self.data = leboncoin.ads
+            self.data = leboncoin
             
             tableView.reloadData()
         } catch let error {

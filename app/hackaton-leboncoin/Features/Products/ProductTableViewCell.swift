@@ -9,7 +9,7 @@
 import UIKit
 
 class ProductTableViewCell: UITableViewCell, Bindable {
-    typealias T = Ad
+    typealias T = LeboncoinElement
     
     // MARK: - IBOutlet
     @IBOutlet weak var adImageView: UIImageView!
@@ -26,9 +26,9 @@ class ProductTableViewCell: UITableViewCell, Bindable {
         print(#function)
     }
     
-    func bind(object obj: Ad) {
+    func bind(object obj: LeboncoinElement) {
         titleLabel.text = obj.subject
-        if let p = obj.price?.first {
+        if let p = obj.price {
             priceLabel.text = String(p) + " €"
         }
         
@@ -41,15 +41,17 @@ class ProductTableViewCell: UITableViewCell, Bindable {
         
         
         // Test
-        if let badgeAR = UIImage(named: "ARKit-Badge") {
-            let sourceSize = adImageView.frame.size
-            let factor: CGFloat = 1 / 3
-            let width = sourceSize.width * factor
-            let height: CGFloat = 20.0
-            let view = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: 0),
-                                                 size: CGSize(width: width, height: height)))
-            view.image = badgeAR
-            adImageView.addSubview(view)
+        if let _ = obj.model {
+            if let badgeAR = UIImage(named: "ARKit-Badge") {
+                let sourceSize = adImageView.frame.size
+                let factor: CGFloat = 1 / 3
+                let width = sourceSize.width * factor
+                let height: CGFloat = 20.0
+                let view = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: 0),
+                                                     size: CGSize(width: width, height: height)))
+                view.image = badgeAR
+                adImageView.addSubview(view)
+            }
         }
     }
 }
