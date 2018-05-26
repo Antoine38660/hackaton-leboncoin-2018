@@ -19,6 +19,7 @@ class ProductDetailsViewController: UIViewController {
     
     // MARK: - Properties
     public var ad: LeboncoinElement?
+    internal var suggestionProducts: [LeboncoinElement]?
     
     // MARK: - Setup
     override func viewDidLoad() {
@@ -37,6 +38,14 @@ class ProductDetailsViewController: UIViewController {
         }
         
         collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "SuggestionCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: SuggestionCollectionViewCell.reuseIdentifier)
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.minimumInteritemSpacing = 1
+        layout.minimumLineSpacing = 10
+        layout.itemSize = CGSize(width: 150, height: 150)
+        collectionView.collectionViewLayout = layout
     }
     
     @objc
@@ -57,5 +66,14 @@ class ProductDetailsViewController: UIViewController {
             adImageView.downloadedFrom(link: imgUrl)
         }
         descTextView.text = data.body
+        
+        let jsonData = LeboncoinData.json.data(using: .utf8)!
+        let jsonDecoder = JSONDecoder()
+        do {
+            let leboncoin = try jsonDecoder.decode(Leboncoin.self, from: jsonData)
+            suggestionProducts = leboncoin
+        } catch let error {
+            print(error)
+        }
     }
 }

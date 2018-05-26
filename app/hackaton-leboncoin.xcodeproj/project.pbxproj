@@ -220,10 +220,10 @@
 		7374EFF020B8456000E28BE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7374F03E20B8AAAB00E28BE8 /* Details */,
 				7374EFF220B8458C00E28BE8 /* ProductsViewController.swift */,
 				7199580C20B8845F0036C53F /* ProductTableViewCell.swift */,
 				7374F03A20B8A84900E28BE8 /* ProductTableViewCell.xib */,
+				7374F03E20B8AAAB00E28BE8 /* Details */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -323,8 +323,8 @@
 		7374F03E20B8AAAB00E28BE8 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				7374F04320B8D2BF00E28BE8 /* ProductDetailsViewController+CollectionView.swift */,
 				7374F03F20B8AABC00E28BE8 /* ProductDetailsViewController.swift */,
+				7374F04320B8D2BF00E28BE8 /* ProductDetailsViewController+CollectionView.swift */,
 				7374F04520B8D3AF00E28BE8 /* PrototypeCell */,
 			);
 			path = Details;

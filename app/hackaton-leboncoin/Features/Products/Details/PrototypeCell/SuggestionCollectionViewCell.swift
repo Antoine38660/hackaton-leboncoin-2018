@@ -16,6 +16,7 @@ class SuggestionCollectionViewCell: UICollectionViewCell, Bindable {
     @IBOutlet weak var priceLabel: UILabel!
     
     // MARK: - Properties
+    static var reuseIdentifier = "SuggestionCollectionViewCell"
     
     // MARK: - Setup
     override func awakeFromNib() {
