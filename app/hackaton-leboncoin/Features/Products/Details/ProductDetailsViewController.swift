@@ -33,8 +33,10 @@ class ProductDetailsViewController: UIViewController {
                                        style: .done,
                                        target: self,
                                        action: #selector(goToARView))
-        if let _ = navigationController {
-            navigationItem.rightBarButtonItem = arButton
+        if let _ = ad?.dimension {
+            if let _ = navigationController {
+                navigationItem.rightBarButtonItem = arButton
+            }
         }
         
         collectionView.dataSource = self

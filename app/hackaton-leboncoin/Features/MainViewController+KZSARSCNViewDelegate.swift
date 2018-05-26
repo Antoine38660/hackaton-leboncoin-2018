@@ -54,7 +54,19 @@ extension MainViewController: KZSARSCNViewDelegate {
     }
     
     func KZSARDetected(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, plane anchor: ARPlaneAnchor) {
-        
+        if anchor.alignment == .horizontal {
+            guard let ad = adSelected else { return }
+            
+            if let dimension = ad.dimension,
+                let w = dimension.width,
+                let h = dimension.height,
+                let length = dimension.length {
+                let box = createBoundingBox(width: CGFloat(w),
+                                            height: CGFloat(h),
+                                            length: CGFloat(length))
+                node.addChildNode(box)
+            }
+        }
     }
     
     func KZSARDetected(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, image anchor: ARImageAnchor) {
