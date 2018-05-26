@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="olj-st-BcA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="olj-st-BcA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Products View Controller-->
+        <!--leboncoin-->
         <scene sceneID="bLy-jy-P9k">
             <objects>
                 <viewController id="hnb-E7-Vi2" customClass="ProductsViewController" customModule="hackaton_leboncoin" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c2L-bV-WFK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2bT-M1-eXY"/>
+                    <navigationItem key="navigationItem" title="leboncoin" id="2bT-M1-eXY">
+                        <barButtonItem key="backBarButtonItem" title="Retour" id="HkH-l6-Gum"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="a2p-iA-GPd" id="Adc-JJ-IZm"/>
                     </connections>
@@ -125,15 +127,19 @@
             </objects>
             <point key="canvasLocation" x="2808.8000000000002" y="112.89355322338831"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ertyui-->
         <scene sceneID="IsZ-1b-Q4d">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="olj-st-BcA" sceneMemberID="viewController">
+                <navigationController title="ertyui" automaticallyAdjustsScrollViewInsets="NO" id="olj-st-BcA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KDP-Lw-vnD">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.90196078430000004" green="0.45098039220000002" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -372,4 +378,5 @@
         <image name="Exit" width="25" height="25"/>
         <image name="restartPressed" width="20" height="23"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
