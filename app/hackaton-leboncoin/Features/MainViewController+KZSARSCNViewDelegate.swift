@@ -63,7 +63,6 @@ extension MainViewController: KZSARSCNViewDelegate {
                     modelIsDisplayed.toggle()
                     if let modelName = ad.model {
                         // Show 3D Model
-                        
                         let modelFirst = models.first { (vo) -> Bool in
                             vo.modelName == modelName
                         }
@@ -76,9 +75,14 @@ extension MainViewController: KZSARSCNViewDelegate {
                             let w = dimension.width,
                             let h = dimension.height,
                             let length = dimension.length {
-                            let box = createBoundingBox(width: CGFloat(w),
-                                                        height: CGFloat(h),
-                                                        length: CGFloat(length))
+                            let box = createBoundingBox(width: CGFloat(w) / 100,
+                                                        height: CGFloat(h) / 100,
+                                                        length: CGFloat(length) / 100)
+                            let vo = KZSVirtualObject()
+                            vo.addChildNode(box)
+                            
+                            //vo.load()
+                            //insertVirtalObject(virtualObject: vo)
                             node.addChildNode(box)
                         }
                     }

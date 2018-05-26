@@ -13,9 +13,9 @@ extension CatalogViewController: UICollectionViewDelegate {
         print(#function + ": \(indexPath)")
         searchBar.endEditing(true)
         // Called when user select item into the collection view.
-        delegate?.catalogView(controller: self,
+        /*delegate?.catalogView(controller: self,
                               node: node,
-                              didSelect: products[indexPath.row])
+                              didSelect: products[indexPath.row])*/
         dismiss(animated: true, completion: nil)
     }
 }
