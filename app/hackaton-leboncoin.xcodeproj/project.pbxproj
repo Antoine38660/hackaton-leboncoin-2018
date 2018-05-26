@@ -10,7 +10,7 @@
 		7117AB3520B8C6070090E59A /* ISODate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117AB3420B8C6070090E59A /* ISODate.swift */; };
 		7155D4D120B89C8E008DEFEF /* LeboncoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155D4D020B89C8E008DEFEF /* LeboncoinModel.swift */; };
 		7186C07020B8333B00DC60E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7186C06F20B8333B00DC60E3 /* AppDelegate.swift */; };
-		7186C07220B8333B00DC60E3 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07120B8333B00DC60E3 /* art.scnassets */; };
+		7186C07220B8333B00DC60E3 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07120B8333B00DC60E3 /* Models.scnassets */; };
 		7186C07720B8333B00DC60E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07520B8333B00DC60E3 /* Main.storyboard */; };
 		7186C07920B8333C00DC60E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07820B8333C00DC60E3 /* Assets.xcassets */; };
 		7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7186C07A20B8333C00DC60E3 /* LaunchScreen.storyboard */; };
@@ -62,7 +62,7 @@
 		7155D4D020B89C8E008DEFEF /* LeboncoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinModel.swift; sourceTree = "<group>"; };
 		7186C06C20B8333B00DC60E3 /* hackaton-leboncoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaton-leboncoin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7186C06F20B8333B00DC60E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7186C07120B8333B00DC60E3 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		7186C07120B8333B00DC60E3 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 		7186C07620B8333B00DC60E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7186C07820B8333C00DC60E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7186C07B20B8333C00DC60E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				7199580E20B891AB0036C53F /* Data */,
-				7186C07120B8333B00DC60E3 /* art.scnassets */,
+				7186C07120B8333B00DC60E3 /* Models.scnassets */,
 				7186C07820B8333C00DC60E3 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -409,7 +409,7 @@
 			files = (
 				7374F04920B8D3CF00E28BE8 /* SuggestionCollectionViewCell.xib in Resources */,
 				7374EFED20B83A3300E28BE8 /* Podfile in Resources */,
-				7186C07220B8333B00DC60E3 /* art.scnassets in Resources */,
+				7186C07220B8333B00DC60E3 /* Models.scnassets in Resources */,
 				7374F01F20B8720C00E28BE8 /* CatalogCollectionViewCell.xib in Resources */,
 				7374F03B20B8A84900E28BE8 /* ProductTableViewCell.xib in Resources */,
 				7186C07C20B8333C00DC60E3 /* LaunchScreen.storyboard in Resources */,

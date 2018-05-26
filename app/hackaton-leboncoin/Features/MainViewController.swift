@@ -38,7 +38,7 @@ class MainViewController: KZSARViewController {
         ".serialSceneKitQueue")
     
     /// Models from scnassets resources
-    let models = KZSVirtualObject.loadFromSceneAssets(groupNamed: "art.scnassets") { (vo) -> [ARPlaneAnchor.Alignment] in
+    let models = KZSVirtualObject.loadFromSceneAssets(groupNamed: "Models.scnassets") { (vo) -> [ARPlaneAnchor.Alignment] in
         [.vertical]
     }
     
