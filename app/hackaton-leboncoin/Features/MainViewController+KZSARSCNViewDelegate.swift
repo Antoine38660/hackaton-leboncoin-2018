@@ -57,33 +57,34 @@ extension MainViewController: KZSARSCNViewDelegate {
         if anchor.alignment == .horizontal {
             guard let ad = adSelected else { return }
             
-            
             if ad.dimension != nil {
                 if !modelIsDisplayed {
                     modelIsDisplayed.toggle()
-                    if let modelName = ad.model {
-                        // Show 3D Model
-                        let modelFirst = models.first { (vo) -> Bool in
-                            vo.modelName == modelName
-                        }
-                        if let model = modelFirst {
-                            placeVirtualObject(virtualObject: model)
-                        }
-                    } else {
-                        // Show Bounding Box
-                        if let dimension = ad.dimension,
-                            let w = dimension.width,
-                            let h = dimension.height,
-                            let length = dimension.length {
-                            let box = createBoundingBox(width: CGFloat(w) / 100,
-                                                        height: CGFloat(h) / 100,
-                                                        length: CGFloat(length) / 100)
-                            let vo = KZSVirtualObject()
-                            vo.addChildNode(box)
-                            
-                            //vo.load()
-                            //insertVirtalObject(virtualObject: vo)
-                            node.addChildNode(box)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [unowned self] in
+                        if let modelName = ad.model {
+                            // Show 3D Model
+                            let modelFirst = self.models.first { (vo) -> Bool in
+                                vo.modelName == modelName
+                            }
+                            if let model = modelFirst {
+                                self.placeVirtualObject(virtualObject: model)
+                            }
+                        } else {
+                            // Show Bounding Box
+                            if let dimension = ad.dimension,
+                                let w = dimension.width,
+                                let h = dimension.height,
+                                let length = dimension.length {
+                                let box = self.createBoundingBox(width: CGFloat(w) / 100,
+                                                            height: CGFloat(h) / 100,
+                                                            length: CGFloat(length) / 100)
+                                let vo = KZSVirtualObject()
+                                vo.addChildNode(box)
+                                
+                                //vo.load()
+                                //insertVirtalObject(virtualObject: vo)
+                                node.addChildNode(box)
+                            }
                         }
                     }
                 }
