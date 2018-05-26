@@ -38,7 +38,7 @@ class ProductTableViewCell: UITableViewCell, Bindable {
         }
         
         // Test
-        if let _ = obj.model {
+        if let _ = obj.dimension {
             if let badgeAR = UIImage(named: "ARKit-Badge") {
                 let sourceSize = adImageView.frame.size
                 let factor: CGFloat = 1 / 3

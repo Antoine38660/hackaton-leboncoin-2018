@@ -219,4 +219,23 @@ class MainViewController: KZSARViewController {
         //let tmp = position.y + sender.value
         //virtualObjectInteraction.selectedObject?.position.y += sender.value
     }
+    
+    func createBoundingBox(width: CGFloat, height: CGFloat, length: CGFloat) -> SCNNode {
+        let sm = "float u = _surface.diffuseTexcoord.x; \n" +
+            "float v = _surface.diffuseTexcoord.y; \n" +
+            "int u100 = int(u * 100); \n" +
+            "int v100 = int(v * 100); \n" +
+            "if (u100 % 99 == 0 || v100 % 99 == 0) { \n" +
+            "  // do nothing \n" +
+            "} else { \n" +
+            "    discard_fragment(); \n" +
+        "} \n"
+        
+        let box = SCNBox(width: width, height: height, length: length, chamferRadius: 0)
+        
+        box.firstMaterial?.emission.contents = Stylesheet.Color.main.value
+        box.firstMaterial?.shaderModifiers = [SCNShaderModifierEntryPoint.surface: sm]
+        box.firstMaterial?.isDoubleSided = true
+        return SCNNode(geometry: box)
+    }
 }
