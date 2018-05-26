@@ -61,6 +61,13 @@ extension MainViewController: KZSARSCNViewDelegate {
             if ad.dimension != nil {
                 if let modelName = ad.model {
                     // Show 3D Model
+                    
+                    let modelFirst = models.first { (vo) -> Bool in
+                        vo.modelName == modelName
+                    }
+                    if let model = modelFirst {
+                        placeVirtualObject(virtualObject: model)
+                    }
                 } else {
                     // Show Bounding Box
                     if let dimension = ad.dimension,

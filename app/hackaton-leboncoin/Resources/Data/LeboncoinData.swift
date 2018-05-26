@@ -102,7 +102,7 @@ class LeboncoinData {
                     "height": 83,
                     "length": 85
                 },
-                "model":"model-1.scn"
+                "model":"model-1"
             },
             {
                 "body": "Canapé  convertible    Clic   Clac    B Z \\n\\nTrès Bon Etat\\n\\nCôtes en position Lit :  largeur 1m42  longueur 1m98\\n\\nCôtes en position canapé :  Hauteur 83 cm  Largeur 1m42   Profondeur 95 cm\\n\\nTél:  0676314304\\n\\nVisible  sur Vienne",

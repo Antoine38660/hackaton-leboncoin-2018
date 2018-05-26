@@ -73,6 +73,10 @@ class MainViewController: KZSARViewController {
         statusDelegate = self
         
         print(models)
+        models.forEach { (vo) in
+            print("+- \(vo.name)")
+            print("-- \(vo.modelName)")
+        }
         setupView()
         
         super.viewDidLoad()
