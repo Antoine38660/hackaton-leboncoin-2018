@@ -57,6 +57,7 @@ class MainViewController: KZSARViewController {
     internal var modalIsOpened = false
     
     public var adSelected: LeboncoinElement?
+    internal var modelIsDisplayed = false
     
     // MARK: - Setup
     override func viewDidLoad() {
