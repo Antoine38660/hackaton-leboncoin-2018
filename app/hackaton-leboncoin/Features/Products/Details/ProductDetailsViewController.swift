@@ -29,6 +29,7 @@ class ProductDetailsViewController: UIViewController {
     }
     
     private func setupView() {
+        title = "leboncoin"
         let arButton = UIBarButtonItem(title: "AR",
                                        style: .done,
                                        target: self,
