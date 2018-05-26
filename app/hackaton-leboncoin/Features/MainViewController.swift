@@ -39,7 +39,7 @@ class MainViewController: KZSARViewController {
     
     /// Models from scnassets resources
     let models = KZSVirtualObject.loadFromSceneAssets(groupNamed: "Models.scnassets") { (vo) -> [ARPlaneAnchor.Alignment] in
-        [.vertical]
+        [.horizontal]
     }
     
     /// Action Key

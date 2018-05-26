@@ -9,13 +9,14 @@
 import UIKit.UICollectionViewCell
 
 class CatalogCollectionViewCell: UICollectionViewCell, Bindable {
-    typealias T = Product
+    typealias T = LeboncoinElement
     
     // MARK: - IBOutlet
     
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var priceLabel: EdgeInsetLabel!
     
+    @IBOutlet weak var badgeImageView: UIImageView!
     // MARK: - Setup
     
     override func awakeFromNib() {
@@ -40,7 +41,14 @@ class CatalogCollectionViewCell: UICollectionViewCell, Bindable {
     }
     
     // MARK: - Bindable
-    func bind(object obj: Product) {
+    func bind(object obj: LeboncoinElement) {
+        badgeImageView.isHidden = obj.dimension == nil
+        if let p = obj.price {
+            priceLabel.text = String(p) + " €"
+        }
+        if let imgUrl = obj.images?.urlsThumb?.first {
+            productImageView.downloadedFrom(link: imgUrl)
+        }
         //priceLabel.text = String(obj.price) + "€"
         //productImageView.image = UIImage(named: obj.photo)
     }

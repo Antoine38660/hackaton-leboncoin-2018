@@ -51,7 +51,7 @@ class CatalogViewController: ModalViewController {
     /// Node to add when detecting an image. (Image Recognition)
     public var node: SCNNode?
     
-    internal var products: [Product] = []
+    internal var products: [LeboncoinElement] = []
     
     /// Delegate allowing to send selected item on `UICollectionView`
     weak var delegate: CatalogViewControllerDelegate?
@@ -110,6 +110,16 @@ class CatalogViewController: ModalViewController {
             
             index += 1
         }*/
+        let data = LeboncoinData.json.data(using: .utf8)!
+        let jsonDecoder = JSONDecoder()
+        do {
+            let leboncoin = try jsonDecoder.decode(Leboncoin.self, from: data)
+            print(leboncoin)
+            self.products = leboncoin
+        } catch let error {
+            print(error)
+        }
+        
         collectionView.reloadData()
     }
     
