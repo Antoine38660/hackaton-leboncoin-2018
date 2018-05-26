@@ -10,7 +10,7 @@ import Foundation
 
 class LeboncoinData {
     static var json: String {
-        return """
+        let val = """
         [
         {
         "body": "Vend canapé cuir 3 places",
@@ -39,15 +39,8 @@ class LeboncoinData {
         },
         "price": 120,
         "subject": "Canapé cuir",
-        "url": "https://www.leboncoin.fr/vi/1438478412.htm",
-        "model": "model-1.scn"
+        "url": "https://www.leboncoin.fr/vi/1438478412.htm"
         },
-        
-        
-        
-        
-        
-        
         {
         "body": "2)Literie-Canapé\\n\\n- [ ] Lit metal KOPARDAL ikea 160 cm avec le cadre, le Matelas et les sommier à lattes à 149 €\\n- [ ] Lit en bois Luröy Ikea 160 cm Matelas à ressorts ensachés, moitié ferme et moitié mi-ferme, gris foncé tres bonne confort avec le cadre, le Matelas et les sommier à lattes  à 269 €\\n- [ ] Lit en bois Luröy Ikea 140 cm Matelas en mousse, ferme, blanc avec le cadre, le Matelas et les sommier à lattes à 139 €\\n- [ ] Très grand sofa lit HOLMSUND ikea 259 €\\n- [ ] Grande sofa lit HIMMENE ikea 189 €\\n- [ ] Sofa lit double HEMNES ikea avec deux matelas simples 299 €\\n- [ ] Beaucoup d’oreillers, draps, serviettes et couettes à vendre également\\n\\nAdresse : 1, Boulevard Joseph Vallier 38100 Grenoble, Montée B, 3ème étage à gauche.\\nNous avons d’autres ameublements et appareils à vendre.\\n\\nBien Cordialement,\\n\\nSultan",
         "category_id": "19",
@@ -103,7 +96,7 @@ class LeboncoinData {
         "department_name": "Isère"
         },
         "price": 50,
-        
+        "subject": "Canapé gris",
         "dimension": {
         "width": 100,
         "height": 100,
@@ -111,14 +104,6 @@ class LeboncoinData {
         },
         "model":"model-1.scn"
         },
-        
-        
-        
-        
-        
-        
-        
-        
         {
         "body": "Canapé  convertible    Clic   Clac    B Z \\n\\nTrès Bon Etat\\n\\nCôtes en position Lit :  largeur 1m42  longueur 1m98\\n\\nCôtes en position canapé :  Hauteur 83 cm  Largeur 1m42   Profondeur 95 cm\\n\\nTél:  0676314304\\n\\nVisible  sur Vienne",
         "category_id": "19",
@@ -155,15 +140,6 @@ class LeboncoinData {
         "subject": "Canapé Clic Clac B Z Super Etat",
         "url": "https://www.leboncoin.fr/vi/1438520983.htm"
         },
-        
-        
-        
-        
-        
-        
-        
-        
-        
         {
         "body": "Canapé en cuir de qualité : 120 €\\nDim. L. 196 x h 92 x p. 93 cm\\nAssise très confortable\\nVoir aspect du cuir sur échantillon cuir en Photo 3\\nEn option (15€ en sus) : Housse en tissus gris foncé aux dim. adaptées\\nA prendre sur place\\nAnnonce visible = article disponible",
         "category_id": "19",
@@ -201,18 +177,6 @@ class LeboncoinData {
         "subject": "Canapé en cuir 3 places",
         "url": "https://www.leboncoin.fr/vi/969339558.htm"
         },
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         {
         "body": "Vend un canapé en cuir très bon état 280 x 160",
         "category_id": "19",
@@ -244,15 +208,6 @@ class LeboncoinData {
         "subject": "Canapé",
         "url": "https://www.leboncoin.fr/vi/1416169126.htm"
         },
-        
-        
-        
-        
-        
-        
-        
-        
-        
         {
         
         "body": "à vendre canapé d angle  2 + 2 places\\nentièrement déhoussable donc lavable en machine\\ncouleur marron chocolat\\nacheter chez ikea ( modele toujours dispo ) donc possibilité de changer les housses\\nDimensions\\nLargeur : 243 cm \\nProfondeur: 88 cm \\nHauteur: 88 cm \\nProf. assise: 49 cm \\nHaut. assise: 45 cm \\nprix fixe : 200Euro(s) \\nà retirer à mon domicile uniquement",
@@ -292,15 +247,6 @@ class LeboncoinData {
         "subject": "canapé 200Euro(s)",
         "url": "https://www.leboncoin.fr/vi/1438482098.htm"
         },
-        
-        
-        
-        
-        
-        
-        
-        
-        
         {
         "body": "Canapé 3 places cuir largeur 111 cm longueur 207 cm hauteur accoudoir 53 hauteur repose tête ouvert 97 cm. Parfait état.",
         "category_id": "19",
@@ -337,13 +283,6 @@ class LeboncoinData {
         "subject": "Canapé cuir gris clair",
         "url": "https://www.leboncoin.fr/vi/1394148574.htm"
         },
-        
-        
-        
-        
-        
-        
-        
         {
         "body": "Vends 1 canapé et 1 fauteuil en excellent état en cuir de buffle couleur vanille de chez Chateau d'Ax \\nCanapé dim. 200X 95cm\\nFauteuil dim. 107 X 95cm",
         "category_id": "19",
@@ -382,15 +321,6 @@ class LeboncoinData {
         "subject": "Canapé et fauteuil",
         "url": "https://www.leboncoin.fr/vi/1438471986.htm"
         },
-        
-        
-        
-        
-        
-        
-        
-        
-        
         {
         "body": "Canapé en cuir gris anthracite.\\nC'est un gris très foncé, un peu plus foncé qu'il n'y parait sur les photos.\\nDimensions: largeur 160 cm, profondeur 100 cm, hauteur 75 cm.\\nAncien mais d'une solidité à toute épreuve ... et que j'ai fini par remplacer.",
         "category_id": "19",
@@ -427,5 +357,7 @@ class LeboncoinData {
         }
         ]
         """
+        
+        return val
     }
 }
