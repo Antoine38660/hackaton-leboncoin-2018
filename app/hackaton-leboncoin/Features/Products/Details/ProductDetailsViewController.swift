@@ -34,7 +34,7 @@ class ProductDetailsViewController: UIViewController {
                                        style: .done,
                                        target: self,
                                        action: #selector(goToARView))
-        if let _ = ad?.dimension {
+        if ad?.dimension != nil {
             if let _ = navigationController {
                 navigationItem.rightBarButtonItem = arButton
             }

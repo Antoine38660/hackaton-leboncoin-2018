@@ -18,6 +18,9 @@ import KZSLAB_AR_Indicator
 
 class MainViewController: KZSARViewController {
     // MARK: - IBOutlets
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     @IBOutlet internal weak var fanMenuView: FanMenu!{
         didSet {
             fanMenuView.isHidden = false
@@ -91,7 +94,12 @@ class MainViewController: KZSARViewController {
     
     func setupView() {
         // Init settings
-        
+        if let ad = adSelected {
+            titleLabel.text = ad.subject
+            if let p = ad.price {
+                priceLabel.text = String(p) + " €"
+            }
+        }
         // Fan View
         fanMenuView.backgroundColor = .clear
         let mainButton = Menu.Item.main.value

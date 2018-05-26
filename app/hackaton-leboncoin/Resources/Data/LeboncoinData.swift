@@ -138,6 +138,11 @@ class LeboncoinData {
                 
                 "price": 50,
                 "subject": "Canapé Clic Clac B Z Super Etat",
+                "dimension": {
+                    "width": 200,
+                    "height": 83,
+                    "length": 85
+                },
                 "url": "https://www.leboncoin.fr/vi/1438520983.htm"
             },
             {
