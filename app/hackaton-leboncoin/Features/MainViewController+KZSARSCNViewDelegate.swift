@@ -57,15 +57,25 @@ extension MainViewController: KZSARSCNViewDelegate {
         if anchor.alignment == .horizontal {
             guard let ad = adSelected else { return }
             
-            if let dimension = ad.dimension,
-                let w = dimension.width,
-                let h = dimension.height,
-                let length = dimension.length {
-                let box = createBoundingBox(width: CGFloat(w),
-                                            height: CGFloat(h),
-                                            length: CGFloat(length))
-                node.addChildNode(box)
+            
+            if ad.dimension != nil {
+                if let modelName = ad.model {
+                    // Show 3D Model
+                } else {
+                    // Show Bounding Box
+                    if let dimension = ad.dimension,
+                        let w = dimension.width,
+                        let h = dimension.height,
+                        let length = dimension.length {
+                        let box = createBoundingBox(width: CGFloat(w),
+                                                    height: CGFloat(h),
+                                                    length: CGFloat(length))
+                        node.addChildNode(box)
+                    }
+                }
             }
+            
+            
         }
     }
     
