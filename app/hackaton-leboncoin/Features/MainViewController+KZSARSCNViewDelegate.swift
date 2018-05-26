@@ -59,30 +59,31 @@ extension MainViewController: KZSARSCNViewDelegate {
             
             
             if ad.dimension != nil {
-                if let modelName = ad.model {
-                    // Show 3D Model
-                    
-                    let modelFirst = models.first { (vo) -> Bool in
-                        vo.modelName == modelName
-                    }
-                    if let model = modelFirst {
-                        placeVirtualObject(virtualObject: model)
-                    }
-                } else {
-                    // Show Bounding Box
-                    if let dimension = ad.dimension,
-                        let w = dimension.width,
-                        let h = dimension.height,
-                        let length = dimension.length {
-                        let box = createBoundingBox(width: CGFloat(w),
-                                                    height: CGFloat(h),
-                                                    length: CGFloat(length))
-                        node.addChildNode(box)
+                if !modelIsDisplayed {
+                    modelIsDisplayed.toggle()
+                    if let modelName = ad.model {
+                        // Show 3D Model
+                        
+                        let modelFirst = models.first { (vo) -> Bool in
+                            vo.modelName == modelName
+                        }
+                        if let model = modelFirst {
+                            placeVirtualObject(virtualObject: model)
+                        }
+                    } else {
+                        // Show Bounding Box
+                        if let dimension = ad.dimension,
+                            let w = dimension.width,
+                            let h = dimension.height,
+                            let length = dimension.length {
+                            let box = createBoundingBox(width: CGFloat(w),
+                                                        height: CGFloat(h),
+                                                        length: CGFloat(length))
+                            node.addChildNode(box)
+                        }
                     }
                 }
             }
-            
-            
         }
     }
     
